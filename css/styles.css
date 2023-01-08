@@ -1,0 +1,540 @@
+/**************
+-- ITENS INICIAIS --
+**************/
+
+	*{
+		margin: 0 0 0 0;
+	}
+
+	body{
+		font-family: helvetica, arial, sans-serif;
+		font-size: 14px;
+		max-width: 1200px;
+		margin: 20px 20px 20px 20px;
+	}
+
+	.cabecalho{
+		width: 100%;
+	}
+
+	.saudacao{
+		max-width: 300px;
+		float: left;
+	}
+
+	.logout{
+		max-width: 300px;
+		float: right;
+		margin-top: 10px;
+	}
+
+	.mensagens{
+		width: 100%;
+	}
+
+	#links{
+		width: 100%;
+		height: 50px;
+	}
+
+	#link_login{
+		max-width: 350px;
+		float: left;
+		height: 45px;
+	}
+
+	#link_cadastro{
+		max-width: 300px;
+		float: right;
+		height: 45px;
+		margin-top: 10px;
+	}
+
+/**************
+-- TABELAS --
+**************/
+
+	table{
+		width: 100%;
+		text-align: left;
+	}
+
+	table, th, td{
+		border-collapse: collapse;
+		border: 1px solid #ccc;
+		vertical-align: middle;
+	}
+
+	tr:hover{
+		background-color: #ffffe0;
+	}
+
+	th{
+		text-align: center;
+		height: 35px;
+		font-weight: bolder;
+	}
+
+	.lista_solicitacoes{
+		width: 100%;
+	}
+
+	.lista_caixas{
+		width: 100%;
+	}
+
+	.lista_caixas h1{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.celula_miniatura{
+		text-align: center;
+		width: 20%;
+	}
+
+	.celula_nome{
+		width: 15%;
+	}
+
+	.celula_descricao{
+		width: 45%;
+	}
+
+	.celula_acao{
+		text-align: center;
+	}
+
+	.th_sol_numero, .td_sol_numero{
+		width: 5%;
+	}
+
+	.th_sol_caixa, .td_sol_caixa{
+		width: 15%;
+	}
+
+	.th_sol_solicitante, .td_sol_solicitante{
+		width: 15%;
+	}
+
+	.th_sol_inst, .td_sol_inst{
+		width: 15%;
+	}
+	
+	.th_sol_contato, .td_sol_contato{
+		width: 10%;
+		text-align: center;
+	}
+
+	.th_sol_emp, .td_sol_emp{
+		width: 10%;
+		text-align: center;
+	}
+
+	.th_sol_dev, .td_sol_dev{
+		width: 10%;
+		text-align: center;
+	}
+	
+	.td_sol_dev_at{
+		width: 10%;
+		text-align: center;
+		color: red;
+	}
+
+	.th_sol_acoes, .td_sol_acoes{
+		min-width: 250px;
+	}
+
+/**************
+-- FORMULÁRIOS --
+**************/
+
+	form h1{
+		text-align: center;
+		font-size: 18px;
+		color: #1a323b;
+	}
+
+	form label{
+		margin-top: 3px;
+		font-weight: bold;
+		float: left;
+		color: #1a323b;
+	}
+	
+	.formLinha{
+		margin-left: 15px;
+		height: 40px;
+		width: 100%;
+	}
+
+	.formLinhaA{
+		margin-left: 15px;
+		margin-top: 15px;
+		height: 40px;
+	}
+
+	.formLinhaZ{
+		width: 100%;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		height: 40px;
+		text-align: center;
+	}
+
+	.formTextArea{
+		margin-left: 15px;
+		height: 240px;
+	}
+	
+	.formTextAreaP{
+		margin-left: 15px;
+		height: 150px;
+	}
+
+	.formImagem{
+		margin-left: 15px;
+		margin-bottom: 15px;
+		max-height: 220px;
+	}
+	
+	.formImagemCentralizada{
+		margin-left: 15px;
+		margin-bottom: 15px;
+		max-height: 220px;
+		text-align:center;
+	}
+
+	.botaoForm{
+		padding:5px;
+		background-color:#ca6146;
+		border:1px solid #faba76;
+		color:#fff;
+		font-weight:bold;
+	}
+
+	.botaoForm:hover{
+		padding:5px;
+		background-color:#ca6146;
+		border:1px solid #faba76;
+		color:#1a323b;
+		font-weight:bold;
+	}
+
+	.input1{
+		
+	}
+
+	.input2{
+		margin-right: 30px;
+		width: 192px;
+	}
+
+	.input3{
+		width: 500px;
+	}
+
+	.textarea1{
+		margin-bottom: 15px;
+	}
+
+	.inputFile{
+		width: 500px;
+	}
+
+	/*<formCliente>*/
+
+		.formCliente{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+
+		.formCliente label{
+			width: 85px;
+		}
+
+		.formCliente input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+		}
+
+		.formCliente input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formCliente input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+	
+	/*</formCliente>*/
+	/*<formCaixa>*/
+
+		.formCaixa{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 750px;
+		}
+
+		.formCaixa label{
+			width: 100px;
+		}
+
+		.formCaixa input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+
+
+		.formCaixa input[type="file"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+
+		.formCaixa input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formCaixa input[type="file"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formCaixa input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formCaixa input[type="file"]:focus{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formCaixa textarea{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+		
+	/*</formCaixa>*/
+	/*<formLogin>*/
+	
+		.formLogin{
+			padding: 5px;
+			width: 350px;
+		}
+
+		.formLogin label{
+			width: 45px;
+		}
+
+		.formLogin input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+		}
+
+		.formLogin input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formLogin input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+		
+	/*</formLogin>*/
+	/*<formEmprestimo>*/
+
+		.formEmprestimo{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+		
+		.formEmprestimo label{
+			width: 85px;
+		}
+		
+		.formEmprestimo input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+		}
+
+		.formEmprestimo input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formEmprestimo input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+		
+	/*</formEmprestimo>*/
+	/*<formNegar>*/
+	
+		.formNegar{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+		
+		.formNegar textarea{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+		
+	/*</formNegar>*/
+	/*<formRetirada>*/
+	
+		.formRetirada{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+		
+		.formRetirada label{
+			width: 150px;
+		}
+		
+		.formRetirada input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+		}
+
+		.formRetirada input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formRetirada input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+		
+		.formRetirada textarea{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+	
+	/*</formRetirada>*/
+	/*<formDevolucao>*/
+	
+		.formDevolucao{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+		
+		.formDevolucao label{
+			width: 150px;
+		}
+		
+		.formDevolucao input[type="text"]{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+		}
+
+		.formDevolucao input[type="text"]:hover{
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+
+		.formDevolucao input[type="text"]:focus {
+			background-color:#e1e1e1;
+			border:1px solid #faba76;
+			padding:5px;
+		}
+		
+		.formDevolucao textarea{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+	
+	/*</formDevolucao>*/
+	/*<formAvaliacao>*/
+	
+		.formAvaliacao{
+			border:1px solid #faba76;
+			padding: 5px;
+			width: 650px;
+		}
+		
+		.formAvaliacao label{
+			width: 150px;
+		}
+		
+		.formAvaliacao textarea{
+			background-color:#f2f2f2;
+			border:1px solid #faba76;
+			padding:5px;
+			float: left;
+			margin-left: 10px;
+		}
+	
+	/*</formAvaliacao>*/
+
+/**************
+-- IMAGENS --
+**************/
+
+	.miniatura{
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.icone_acao{
+		width: 40px;
+		height: 40px;
+	}
+
+	.icone_acao_desabilitado{
+		width: 40px;
+		height: 40px;
+		opacity : 0.5;
+	}

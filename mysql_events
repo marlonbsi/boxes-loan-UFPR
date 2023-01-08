@@ -1,0 +1,20 @@
+CREATE EVENT defineatrasos
+	ON SCHEDULE EVERY 1 HOUR
+	DO
+		update tb_emprestimo
+			set status = 'atrasado'
+			where id_emprestimo IN 
+				(select * from (SELECT e.id_emprestimo
+					from tb_emprestimo e
+					where e.status = 'retirado' AND e.data_devolucao < now()) _emp);
+					
+
+CREATE EVENT definecancelamentos
+	ON SCHEDULE EVERY 1 HOUR
+	DO
+		update tb_emprestimo
+            set status = 'cancelado'
+            where id_emprestimo IN 
+                (select * from (SELECT e.id_emprestimo
+                    from tb_emprestimo e
+                    where e.status = 'aprovado' AND e.data_devolucao < now()) _emp);
